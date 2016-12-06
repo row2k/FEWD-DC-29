@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FEWD DC 29</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../img/main/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../main/syllabus.html">Syllabus</a></li>
+                    <li><a href="../../main/lessons.html">Lessons</a></li>
+                    <li class="active"><a href="../../main/homework.html">Homework</a></li>
+                    <li><a href="../../main/final-project.html">Final Project</a></li>
+                    <li><a href="../../main/resources.html">Resources</a></li>
+                    <li><a href="../../main/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Homework 4 - Relaxr Site w/ JS</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Description</h2>
+                <p>The team from Relaxr is back...again! They want their page to be more interactive and asked you to add JavaScript to their source code. You've been given the HTML and CSS but will need to create a JavaScript file and add a few different pieces of interactivity:  Users should be able to click a link and have the remainder of the blog's content slide down and appear on the page, both on the main content column and the side bar; users should also be able hide the content when they are finished reading. See a detailed technical explanation below.</p>
+                <hr>
+
+                <h2>Files for this assignment</h2>
+                <p><a href="homework-4.zip">homework-4.zip</a></p>
+                <hr>
+
+                <h2>Due date for this assignment</h2>
+                <p>December 12th, 2016 (Monday)</p>
+                <hr>
+
+                <h2>Real-World Applications</h2>
+                <ul>
+                  <li>Enhance an existing site with JS</li>
+                  <li>Practice jQuery selectors</li>
+                  <li>Programmatic thinking application</li>
+                  <li>Linking external .js file to main file</li>
+                  <li>Use the Box Model to style element borders and structure your page</li>
+                </ul>
+                <hr>
+
+                <h2>Technical Requirements</h2>
+                <ul>
+                  <li>Prevent a form submission with the <code>event.preventDefault()</code> function
+                  <li>Use the <code>$.ready()</code> handler to delay your code from executing until all DOM assets have been loaded</li>
+                  <li>Select the appropriate DOM elements with CSS selectors upon a user's click using the <code>$.click()</code> handler</li>
+                  <li>If a user clicks "Read More" on the primary column:</li>
+
+                    <li>have the text in the <code><p></code> tag slide down along with a "Read Less" link in the blog post using  <code>$.slideDown()</code> and <code>$.show()</code></li>
+                    <li>hide the "Read More" link using <code>$.hide()</code></li>
+
+                  <li>If a user clicks "Read Less" on the primary column:</li>
+
+                    <li>have the <code><p></code> slide up and hide the "Read Less" link using  <code>$.slideUp()</code> and <code>$.hide()</code></li>
+                    <li>show the "Read More" link using <code>$.show()</code></li>
+
+                  <li>Using the same functions as above, if a user clicks the "Learn More" link in the sidebar, have the <code><span></code> inside that <code><p></code> slide down and hide the "Learn More" link using <code>$.slideDown()</code> and <code>$.hide()</code></li>
+                </ul>
+                <hr>
+
+                <h2>Submission</h2>
+                <ul>
+                  <li>You will submit this homework assignment to us via Github. If you cannot figure out Github just send it via Slack / .zip file method we have been using for other assignments.</li>
+                </ul>
+                <hr>
+
+                <h2>Evaluation</h2>
+                <p>The instructional team will grade each technical requirement and provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2). The maximum possible score on this assignment is 12/12. You will be evaluated on 6 key items being completed in this assignment:</p>
+                <ul>
+                  <li>JS Item 1: use <code>event.preventDefault()</code> correctly.</li>
+                  <li>JS Item 2: use <code>$.ready()</code> correctly.</li>
+                  <li>JS Item 3: use the <code>$.click()</code> handler</li>
+                  <li>Read more accordion reveals more content to read</li>
+                  <li>Read less accordion hides content to read</li>
+                  <li>Sidebar Learn More reveals content when clicked</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>
